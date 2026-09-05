@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import MainLayout from './layouts/MainLayout';
 import Home from './pages/Home';
-import EVERFrame from './pages/EVERFrame';
+import EVERFrame from './pages/Everframe';
 import Events from './pages/Events';
 import Gallery from './pages/Gallery';
 import About from './pages/About'; // <-- Import About Page
