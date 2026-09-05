@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* Design System Tokens - Evan Dark Crimson Theme */
+@theme {
+  --color-brand-primary: #FF2A54;
+  --color-brand-primary-hover: #D90429;
+  --color-brand-primary-soft: rgba(255, 42, 84, 0.15);
+  
+  --color-brand-bg: #0D0205;              
+  --color-brand-surface: #19080E;
+  --color-brand-text-main: #FFFFFF;       
+  --color-brand-text-muted: #E2B6C0;      
+  --color-brand-border: rgba(255, 255, 255, 0.12);
+
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-text-main);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* GAMBAR BACKGROUND BLUR DI AREA LUAR KOTAK */
+body::before {
+  content: "";
+  position: fixed;
+  top: -40px;
+  left: -40px;
+  right: -40px;
+  bottom: -40px;
+  
+  /* Jalur gambar dari folder public */
+  background-image: url('/evan-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  /* Efek Blur */
+  filter: blur(20px) brightness(0.8);
+  transform: scale(1.1);
+  
+  z-index: -2;
+}
+
+/* OVERLAY GELAP AGAR BACKGROUND TIDAK TERLALU TERANG */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(13, 2, 5, 0.55); /* Atur tingkat kegelapan (0.55 = 55% gelap) */
+  z-index: -1;
+}
