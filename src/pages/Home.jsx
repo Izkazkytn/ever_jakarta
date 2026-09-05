@@ -43,7 +43,7 @@ export default function Home() {
             
             <div className="flex items-center gap-3 pt-2">
               <Link
-                to="/everframe"
+                to="/EVERFrame"
                 className="py-3 px-5 bg-brand-primary hover:bg-brand-primary-hover text-white rounded-2xl font-bold text-xs sm:text-sm flex items-center gap-2 shadow-lg shadow-brand-primary/30 transition-all active:scale-95"
               >
                 <Camera size={16} />

@@ -7,7 +7,7 @@ export default function MobileNav() {
   const navItems = [
     { name: 'Home', path: '/', icon: Sparkles },
     { name: 'Events', path: '/events', icon: Calendar },
-    { name: 'EVERFrame', path: '/everframe', icon: Camera, highlight: true },
+    { name: 'EVERFrame', path: '/EVERFrame', icon: Camera, highlight: true },
     { name: 'Gallery', path: '/gallery', icon: Image },
     { name: 'About', path: '/about', icon: Info },
   ];

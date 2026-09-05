@@ -11,7 +11,7 @@ export default function App() {
     <Routes>
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
-        <Route path="everframe" element={<EVERFrame />} />
+        <Route path="EVERFrame" element={<EVERFrame />} />
         <Route path="events" element={<Events />} />
         <Route path="gallery" element={<Gallery />} />
         <Route path="about" element={<About />} /> {/* <-- Pasang Komponen */}
