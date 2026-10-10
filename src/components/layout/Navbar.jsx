@@ -41,7 +41,11 @@ export default function Navbar() {
                   to={item.path}
                   className="ml-2 px-4 py-2 rounded-xl bg-brand-primary text-white font-bold text-xs shadow-lg shadow-brand-primary/25 hover:bg-brand-primary-hover transition-all active:scale-95 flex items-center gap-1.5"
                 >
-                  <span>📷</span>
+                  <img
+                    src="/logo.jpg"
+                    alt="EVER Jakarta logo"
+                    className="w-4 h-4 object-cover rounded-md border border-white/30"
+                  />
                   <span>{item.label}</span>
                 </Link>
               );

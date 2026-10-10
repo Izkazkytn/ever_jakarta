@@ -26,8 +26,12 @@ export default function MobileNav() {
                 to={item.path}
                 className="flex flex-col items-center justify-center -mt-5"
               >
-                <div className="w-12 h-12 rounded-full bg-brand-primary text-white flex items-center justify-center shadow-lg shadow-brand-primary/30 active:scale-95 transition-transform">
-                  <Icon size={22} />
+                <div className="w-12 h-12 rounded-full bg-brand-primary text-white flex items-center justify-center shadow-lg shadow-brand-primary/30 active:scale-95 transition-transform overflow-hidden border border-white/20">
+                  <img
+                    src="/logo.jpg"
+                    alt="EVER Jakarta logo"
+                    className="w-7 h-7 object-cover rounded-md"
+                  />
                 </div>
                 <span className="text-[10px] font-semibold text-brand-primary mt-1">
                   {item.name}
