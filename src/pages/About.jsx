@@ -1,4 +1,6 @@
-import { Video, ArrowUpRight, Send, Globe } from 'lucide-react';
+import { Video, ArrowUpRight, Globe, MessageCircle } from 'lucide-react';
+
+const WHATSAPP_GROUP_LINK = 'https://chat.whatsapp.com/YOUR_GROUP_LINK_HERE';
 
 const SOCIAL_LINKS = [
   {
@@ -70,16 +72,18 @@ export default function About() {
           Ingin Bergabung Jadi Bagian dari EVER Jakarta?
         </h2>
         <p className="text-xs sm:text-sm text-brand-text-muted max-w-xl mx-auto leading-relaxed">
-          Dapatkan akses prioritas info gathering, pembagian fankit event, dan teman ngobrol sefrekuensi. Bebas biaya pendaftaran!
+          Dapatkan update terbaru info event, pembagian fankit, dan kenal lebih dekat dengan sesama EVER lainnya. Bebas biaya pendaftaran!
         </p>
         <div className="pt-2">
-          <button
-            onClick={() => alert('Terima kasih! Tautan pendaftaran membership akan segera dibuka.')}
+          <a
+            href={WHATSAPP_GROUP_LINK}
+            target="_blank"
+            rel="noopener noreferrer"
             className="py-3 px-6 bg-brand-primary hover:bg-brand-primary-hover text-white rounded-2xl font-bold text-xs sm:text-sm inline-flex items-center gap-2 shadow-lg shadow-brand-primary/30 transition-all active:scale-95 cursor-pointer"
           >
-            <Send size={14} />
-            <span>Daftar Member EVER Jakarta</span>
-          </button>
+            <MessageCircle size={14} />
+            <span>Gabung Komunitas WhatsApp</span>
+          </a>
         </div>
       </div>
 
