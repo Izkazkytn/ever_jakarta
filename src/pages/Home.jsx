@@ -37,20 +37,20 @@ export default function Home() {
             </div>
             
             <h1 className="text-3xl sm:text-5xl font-black text-white leading-tight">
-              Abadikan Momen Manis Bersama <span className="text-brand-primary">EVER JAKARTA</span>
+              Tempat Berbagi Cerita &amp; Momen Bersama <span className="text-brand-primary">EVER JAKARTA</span>
             </h1>
             
             <p className="text-brand-text-muted text-xs sm:text-sm max-w-lg">
-              Platform komunitas resmi untuk event, dokumentasi galeri, dan frame photobooth eksklusif (EVERFrame) khusus untuk kamu dan EVAN.
+              Hub komunitas resmi untuk merayakan setiap momen, mendukung projek terbaru EVAN, dan melihat dokumentasi kegiatan EVER di Jakarta dan sekitarnya.
             </p>
             
             <div className="flex items-center gap-3 pt-2">
               <Link
-                to="/EVERFrame"
+                to="/gallery"
                 className="py-3 px-5 bg-brand-primary hover:bg-brand-primary-hover text-white rounded-2xl font-bold text-xs sm:text-sm flex items-center gap-2 shadow-lg shadow-brand-primary/30 transition-all active:scale-95"
               >
                 <Camera size={16} />
-                <span>Coba EVERFrame (Photobooth)</span>
+                <span>Lihat Galeri</span>
               </Link>
               
               <Link
@@ -58,7 +58,7 @@ export default function Home() {
                 className="py-3 px-5 bg-white/10 hover:bg-white/20 text-white rounded-2xl font-bold text-xs sm:text-sm flex items-center gap-2 border border-white/20 backdrop-blur-md transition-all active:scale-95"
               >
                 <Calendar size={16} />
-                <span>Lihat Event</span>
+                <span>Cek Event</span>
               </Link>
             </div>
           </div>
