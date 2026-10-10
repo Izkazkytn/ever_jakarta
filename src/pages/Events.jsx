@@ -20,8 +20,9 @@ const EVENTS_DATA = [
     title: 'EVAN Birthday Cafe Event 2026',
     category: 'Birthday Project',
     status: 'Mendatang',
-    date: 'Will be announced soon',
-    location: 'Will be announced soon',
+    date: '17 October 2026',
+    location: 'Difabis Coffee & Tea',
+    price: 'HTM 65K (include drink)',
     description: 'Birthday cafe gathering spesial merayakan ulang tahun EVAN! Akan ada dekorasi eksklusif, pembagian fankit, dan photobooth EVERFrame.',
     image: 'birthday2026evan.jpeg',
     organizer: 'EVER JAKARTA Team',
@@ -136,6 +137,12 @@ export default function Events() {
                   <MapPin size={14} className="text-brand-primary" />
                   <span>{event.location}</span>
                 </div>
+                {event.price && (
+                  <div className="flex items-center gap-2 text-[11px] text-amber-300">
+                    <Tag size={12} className="text-brand-primary" />
+                    <span>{event.price}</span>
+                  </div>
+                )}
                 <div className="flex items-center gap-2 text-[11px] text-zinc-400">
                   <Tag size={12} className="text-brand-primary" />
                   <span>{event.organizer}</span>

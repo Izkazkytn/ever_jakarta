@@ -8,8 +8,9 @@ const UPCOMING_HIGHLIGHT = {
   id: 1,
   title: 'EVAN Birthday Cafe Event 2026',
   category: 'Birthday Project',
-  date: 'October 2026',
-  location: 'Will be announced soon',
+  date: '17 October 2026',
+  location: 'Difabis Coffee & Tea',
+  price: 'HTM 65K (include drink)',
   description: 'Gathering & birthday cafe gathering khusus EVER! Bakal ada dekorasi eksklusif, fankit freebies, dan EVERFrame photobooth.',
   image: 'birthday2026evan.jpeg',
 };
@@ -156,7 +157,7 @@ export default function Home() {
                 {UPCOMING_HIGHLIGHT.description}
               </p>
 
-              <div className="flex items-center gap-4 text-xs text-brand-text-muted pt-2 border-t border-brand-border/60">
+              <div className="flex flex-wrap items-center gap-4 text-xs text-brand-text-muted pt-2 border-t border-brand-border/60">
                 <span className="flex items-center gap-1.5 font-semibold text-white">
                   <Calendar size={14} className="text-brand-primary" />
                   {UPCOMING_HIGHLIGHT.date}
@@ -164,6 +165,10 @@ export default function Home() {
                 <span className="flex items-center gap-1.5">
                   <MapPin size={14} className="text-brand-primary" />
                   {UPCOMING_HIGHLIGHT.location}
+                </span>
+                <span className="flex items-center gap-1.5 text-amber-300">
+                  <span className="font-bold">HTM</span>
+                  {UPCOMING_HIGHLIGHT.price}
                 </span>
               </div>
             </div>
