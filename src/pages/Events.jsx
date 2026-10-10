@@ -17,7 +17,7 @@ const EVENTS_DATA = [
   },
   {
     id: 2,
-    title: 'EVAN Birthday Cafe Event 2026',
+    title: 'Evan Superstar Birthday',
     category: 'Birthday Project',
     status: 'Mendatang',
     date: '17 October 2026',
@@ -79,7 +79,7 @@ export default function Events() {
             className="bg-brand-surface/80 border border-brand-border rounded-3xl overflow-hidden shadow-xl backdrop-blur-md flex flex-col justify-between"
           >
             <div className="relative h-48 w-full overflow-hidden bg-black/40">
-              {event.title === 'EVAN Birthday Cafe Event 2026' ? (
+              {event.title === 'Evan Superstar Birthday' ? (
                 <a
                   href={INSTAGRAM_EVENT_LINK}
                   target="_blank"

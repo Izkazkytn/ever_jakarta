@@ -6,7 +6,7 @@ const INSTAGRAM_EVENT_LINK = 'https://www.instagram.com/p/DeRvl1SEydJ/?img_index
 // Single Highlight Event: Coming Soon Birthday Cafe
 const UPCOMING_HIGHLIGHT = {
   id: 1,
-  title: 'EVAN Birthday Cafe Event 2026',
+  title: 'Evan Superstar Birthday',
   category: 'Birthday Project',
   date: '17 October 2026',
   location: 'Difabis Coffee & Tea',
@@ -119,7 +119,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             
             <div className="md:col-span-5 h-48 sm:h-52 rounded-2xl overflow-hidden bg-black/40 relative">
-              {UPCOMING_HIGHLIGHT.title === 'EVAN Birthday Cafe Event 2026' ? (
+              {UPCOMING_HIGHLIGHT.title === 'Evan Superstar Birthday' ? (
                 <a
                   href={INSTAGRAM_EVENT_LINK}
                   target="_blank"
