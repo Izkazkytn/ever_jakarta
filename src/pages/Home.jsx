@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import { Camera, Calendar, Sparkles, Heart, ArrowRight, MapPin } from 'lucide-react';
 
+const INSTAGRAM_EVENT_LINK = 'https://www.instagram.com/p/DeRvl1SEydJ/?img_index=1';
+
 // Single Highlight Event: Coming Soon Birthday Cafe
 const UPCOMING_HIGHLIGHT = {
   id: 1,
@@ -116,11 +118,26 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             
             <div className="md:col-span-5 h-48 sm:h-52 rounded-2xl overflow-hidden bg-black/40 relative">
-              <img
-                src={UPCOMING_HIGHLIGHT.image}
-                alt={UPCOMING_HIGHLIGHT.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
+              {UPCOMING_HIGHLIGHT.title === 'EVAN Birthday Cafe Event 2026' ? (
+                <a
+                  href={INSTAGRAM_EVENT_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block h-full w-full"
+                >
+                  <img
+                    src={UPCOMING_HIGHLIGHT.image}
+                    alt={UPCOMING_HIGHLIGHT.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </a>
+              ) : (
+                <img
+                  src={UPCOMING_HIGHLIGHT.image}
+                  alt={UPCOMING_HIGHLIGHT.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
+              )}
               <span className="absolute top-3 left-3 px-3 py-1 rounded-full bg-brand-primary text-white text-[10px] font-bold shadow-md">
                 {UPCOMING_HIGHLIGHT.category}
               </span>

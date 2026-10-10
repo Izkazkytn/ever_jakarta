@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Sparkles, Calendar, MapPin, Tag, CheckCircle2, Clock } from 'lucide-react';
 
+const INSTAGRAM_EVENT_LINK = 'https://www.instagram.com/p/DeRvl1SEydJ/?img_index=1';
+
 const EVENTS_DATA = [
   {
     id: 1,
@@ -76,11 +78,26 @@ export default function Events() {
             className="bg-brand-surface/80 border border-brand-border rounded-3xl overflow-hidden shadow-xl backdrop-blur-md flex flex-col justify-between"
           >
             <div className="relative h-48 w-full overflow-hidden bg-black/40">
-              <img
-                src={event.image}
-                alt={event.title}
-                className="w-full h-full object-cover"
-              />
+              {event.title === 'EVAN Birthday Cafe Event 2026' ? (
+                <a
+                  href={INSTAGRAM_EVENT_LINK}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block h-full w-full"
+                >
+                  <img
+                    src={event.image}
+                    alt={event.title}
+                    className="w-full h-full object-cover"
+                  />
+                </a>
+              ) : (
+                <img
+                  src={event.image}
+                  alt={event.title}
+                  className="w-full h-full object-cover"
+                />
+              )}
               <div className="absolute top-3 left-3 flex gap-2">
                 <span className="px-3 py-1 rounded-full bg-black/60 backdrop-blur-md text-brand-primary text-[10px] font-bold border border-white/10">
                   {event.category}
