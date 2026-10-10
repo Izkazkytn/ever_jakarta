@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 const NAV_ITEMS = [
   { path: '/', label: 'Home' },
   { path: '/events', label: 'Upcoming Events' },
-  { path: '/everframe', label: 'EVERFrame', isHighlight: true },
+  { path: '/EVERFrame', label: 'EVERFrame', isHighlight: true },
   { path: '/gallery', label: 'Gallery' },
   { path: '/about', label: 'About' },
 ];
